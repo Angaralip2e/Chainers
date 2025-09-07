@@ -1,40 +1,61 @@
-<!DOCTYPE html> <html lang="tr"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Chainers Farm Ürün Puanları</title> <link rel="stylesheet" href="assets/css/styles.css" /> </head> <body> <header class="site-header"> <div class="logo">🌻 Farm Puanları</div> <h1>Chainers Farm Ürün Puanları</h1> </header> <main class="container"> <section class="filters" aria-label="Arama ve filtreler"> <input type="text" id="search" placeholder="Ürün adında ara..." aria-label="Ürün adı arama" /> <select id="category" aria-label="Kategori filtrele"> <option value="">Tümü</option> <option value="Sebze">Sebze</option> <option value="Meyve">Meyve</option> </select> </section> <section class="table-area" aria-label="Ürün tablosu"> <table id="productTable" class="product-table" cellspacing="0" cellpadding="0" border="0"> <thead> <tr> <th>Ürün Adı</th> <th>Common</th> <th>Uncommon</th> <th>Rare</th> <th>Epic</th> <th>Legendary</th> <th>Süre</th> </tr> </thead> <tbody id="tableBody"></tbody> </table> </section> </main> <script src="assets/js/scripts.js"></script> </body> </html>
-B. data/items.json (örnek)
-[
-{
-"name": "Strawberry",
-"category": "Meyve",
-"scores": { "common": 1, "uncommon": 2, "rare": 3, "epic": 7, "legendary": 13 },
-"duration": "2 Dakika"
-},
-{
-"name": "Peas",
-"category": "Sebze",
-"scores": { "common": 1, "uncommon": 2, "rare": 3, "epic": 4, "legendary": 7 },
-"duration": "4 Dakika"
-}
-]
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çiftlik Ürünleri - Ana Sayfa</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Güvenilir ve şık bir ürün kataloğu örneği" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <span class="brand-logo" aria-label="Logo" title="Çiftlik">🌿</span>
+        <h1>Çiftlik Ürünleri</h1>
+      </div>
+      <nav class="main-nav" aria-label="Ana menü">
+        <a class="active" href="index.html">Ana Sayfa</a>
+        <a href="kategori.html">Ürünler</a>
+        <a href="#">Hakkında</a>
+        <a href="#">İletişim</a>
+      </nav>
+    </div>
+  </header>
 
-C. assets/css/styles.css (basit stil örneği)
-:root {
---blue: #0d6efd;
---yellow: #f5e24c;
---bg: #f5f6f7;
---text: #1c1c1c;
-}
+  <main class="container">
+    <section class="hero-card">
+      <h2>Doğadan Gelen Tazelik</h2>
+      <p>Bu örnek, modern bir tasarımla ürün tablosunu nasıl sunabileceğini gösterir.</p>
+      <a class="cta" href="kategori.html">Ürünleri İncele</a>
+    </section>
 
-{ box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); }
-.site-header { background: var(--blue); color: white; padding: 20px; text-align: center; }
-.container { padding: 20px; max-width: 1100px; margin: 0 auto; }
-.filters { display: flex; gap: 12px; margin-bottom: 12px; align-items: center; }
-.filters input, .filters select { padding: 10px; border-radius: 6px; border: 1px solid #ccc; width: 100%; max-width: 300px; }
-.product-table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-.product-table th, .product-table td { padding: 12px 10px; border-bottom: 1px solid #eee; text-align: left; }
-.product-table thead th { background: #f1f1a0; font-weight: bold; }
-.product-table tbody tr:hover { background: #f9f9f9; }
-@media (max-width: 800px){
-.filters { flex-direction: column; align-items: stretch; }
-.filters input, .filters select { width: 100%; max-width: none; }
-.site-header { padding: 16px; }
-}
+    <section class="cards-grid" aria-label="Öne çıkan özellikler">
+      <article class="card">
+        <h3>Kolay Güncelleme</h3>
+        <p>İçerikleri kolayca güncelleyebilir, tabloya yeni ürünler ekleyebilirsin.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive Tasarım</h3>
+        <p>Her cihazda düzgün görünen, mobil uyumlu bir tasarım.</p>
+      </article>
+      <article class="card">
+        <h3>Canlı Yayın</h3>
+        <p>GitHub Pages ile anında canlıya alma süreci basit adımlarla.</p>
+      </article>
+      <article class="card">
+        <h3>Arama & Filtre</h3>
+        <p>Ürünleri hızlıca arayıp filtreleyebilirsin.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Çiftlik Ürünleri. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
