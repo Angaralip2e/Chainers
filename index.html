@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Çiftlik Ürünleri - Ana Sayfa</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Güvenilir ve şık bir ürün kataloğu örneği" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Çiftlik Ürünleri</h1>
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <span class="brand-logo" aria-label="Logo">🌿</span>
+        <h1>Çiftlik Ürünleri</h1>
+      </div>
       <nav class="main-nav" aria-label="Ana menü">
-        <a href="index.html" class="active">Ana Sayfa</a>
+        <a class="active" href="index.html">Ana Sayfa</a>
         <a href="kategori.html">Ürünler</a>
         <a href="#">Hakkında</a>
         <a href="#">İletişim</a>
@@ -20,18 +24,29 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h2>Hoşgeldiniz</h2>
-      <p>Bu site, ürün tablolarını kolayca görüntüleyip güncellemenizi sağlar.</p>
+    <section class="hero-card">
+      <h2>Doğadan Gelen Tazelik</h2>
+      <p>Bu örnek, modern bir tasarımla ürün tablosunu nasıl sunabileceğini gösterir.</p>
+      <a class="cta" href="kategori.html">Ürünleri İncele</a>
     </section>
 
-    <section class="content">
-      <h3>Nasıl Çalışır?</h3>
-      <ul>
-        <li>Ürünler sayfasında tablo halinde verileri görürsün.</li>
-        <li>İstersen tabloları filtreleyebilir ve arama yapabilirsin.</li>
-        <li>Ardından GitHub Pages üzerinden canlıya alabilirsin.</li>
-      </ul>
+    <section class="cards-grid">
+      <article class="card">
+        <h3>Kolay Güncelleme</h3>
+        <p>İçerikleri kolayca güncelleyebilir, tabloya yeni ürünler ekleyebilirsin.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive Tasarım</h3>
+        <p>Her cihazda düzgün görünen, mobil uyumlu bir tasarım.</p>
+      </article>
+      <article class="card">
+        <h3>Canlı Yayın</h3>
+        <p>GitHub Pages ile anında canlıya alma süreci basit adımlarla.</p>
+      </article>
+      <article class="card">
+        <h3>Arama & Filtre</h3>
+        <p>Ürünleri hızlıca arayıp filtreleyebilirsin.</p>
+      </article>
     </section>
   </main>
 
