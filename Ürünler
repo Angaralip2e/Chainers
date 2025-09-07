@@ -4,24 +4,4 @@
   <meta charset="UTF-8" />  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <title>Ürünler – Kategorisi</title>  
-  <link rel="stylesheet" href="styles.css" />  
-</head>  
-<body>  
-  <header class="site-header">  
-    <div class="container">  
-      <h1 class="brand">Çiftlik Ürünleri</h1>  
-      <nav class="main-nav" aria-label="Ana menü">  
-        <a href="index.html" class="active">Ana Sayfa</a>  
-        <a href="kategori.html">Ürünler</a>  
-        <a href="#">Hakkında</a>  
-        <a href="#">İletişim</a>  
-      </nav>  
-    </div>  
-  </header>  
-
-  <main class="container content-area">  
-    <section class="card">  
-      <h2>Ürün Listesi</h2>  
-
-      <!-- Arama -->  
-      <div class="
+ 
