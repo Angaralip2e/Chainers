@@ -1,47 +1,49 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Angarali Pages</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Angarali Pages</h1>
-      <nav class="nav" aria-label="Ana gezinme">
-        <a href="#anasayfa">Ana Sayfa</a>
-        <a href="#tablolar">Tablolar</a>
-        <a href="#hakkimizda">Hakkımızda</a>
-      </nav>
-    </div>
-  </header>
+<!DOCTYPE html>  
+<html lang="tr">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>Ürünler – Kategorisi</title>  
+  <link rel="stylesheet" href="styles.css" />  
+</head>  
+<body>  
+  <!-- Header -->  
+  <header class="site-header">  
+    <div class="container">  
+      <h1 class="brand">Çiftlik Ürünleri</h1>  
+      <nav class="main-nav" aria-label="Ana menü">  
+        <a href="index.html" class="active">Ana Sayfa</a>  
+        <a href="kategori.html">Ürünler</a>  
+        <a href="about.html">Hakkında</a>  
+        <a href="contact.html">İletişim</a>  
+      </nav>  
+    </div>  
+  </header>  
 
-  <main class="container">
-    <section id="anasayfa" class="hero">
-      <h2>Hoş geldiniz!</h2>
-      <p>Angarali.github.io için temel bir başlangıç sayfası.</p>
-      <button id="cta" class="btn">Keşfet</button>
-    </section>
+  <main class="container content-area">  
+    <section class="card">  
+      <h2>Ürün Listesi</h2>  
 
-    <section id="tablolar" class="panel">
-      <h2>Verimlilik Tabloları</h2>
-      <p>İsterseniz tabloları buraya ekleyebilirsiniz.</p>
-    </section>
+      <!-- Arama/Filtre -->  
+      <div class="toolbar">  
+        <input type="text" id="search" placeholder="Ürün adına göre ara…" />  
+      </div>  
 
-    <section id="hakkimizda" class="panel">
-      <h2>Hakkımızda</h2>
-      <p>Bu proje, temel dosyalarla hızlı bir web sayfası kurmanıza yardımcı olur.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Angarali. Tüm hakları saklıdır.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+      <table id="productTable" class="responsive-table" aria-label="Ürün tablosu">  
+        <thead>  
+          <tr>  
+            <th>Ürün</th>  
+            <th>Seviye</th>  
+            <th>Seviye 3 Tarla (4 ürün)</th>  
+            <th>Seviye 4 Tarla (8 ürün)</th>  
+            <th>Seviye 5 Tarla (16 ürün)</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr><td>Melon</td><td>Legendary</td><td>43 200</td><td>86 400</td><td>172 800</td></tr>  
+          <tr><td>Purple Carrot</td><td>Legendary</td><td>41 560</td><td>83 120</td><td>166 240</td></tr>  
+          <tr><td>Sunflower</td><td>Legendary</td><td>41 940</td><td>83 880</td><td>167 760</td></tr>  
+          <tr><td>Black Lotus</td><td>Legendary</td><td>40 200</td><td>80 400</td><td>160 800</td></tr>  
+          <tr><td>BlueBerry</td><td>Legendary</td><td>39 720</td><td>79 440</td><td>158 880</td></tr>  
+          <tr><td>Pineapple</td><td>Legendary</td><td>39 360</td><td>78 720</td><td>157 440</td></tr>  
+          <tr><td>Mint</td><
